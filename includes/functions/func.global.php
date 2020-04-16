@@ -163,24 +163,24 @@ function check_www_in_url($link){
 
 function get_site_url($site_url){
     //If it's not empty
-    if (!empty($site_url)) {
-        // Check if SSL enabled
-        $protocol = isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] && $_SERVER["HTTPS"] != "off"
-            ? "https://" : "http://";
+    // if (!empty($site_url)) {
+    //     // Check if SSL enabled
+    //     $protocol = isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] && $_SERVER["HTTPS"] != "off"
+    //         ? "https://" : "http://";
 
-        $link = get_the_value($site_url);
+    //     $link = get_the_value($site_url);
 
-        $params = explode('.', $_SERVER["HTTP_HOST"]);
+    //     $params = explode('.', $_SERVER["HTTP_HOST"]);
 
-        if($params[0] == 'www') {
-            // www exists
-            $link = "www.".$link;
-        }else{
-            // non www
-        }
+    //     if($params[0] == 'www') {
+    //         // www exists
+    //         $link = "www.".$link;
+    //     }else{
+    //         // non www
+    //     }
 
-        return $site_url = $protocol.$link;
-    }
+    //     return $site_url = $protocol.$link;
+    // }
     return $site_url;
 }
 

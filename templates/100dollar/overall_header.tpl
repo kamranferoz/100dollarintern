@@ -189,15 +189,15 @@
                                         </a></li>
                                     IF('{USERTYPE}' == "user"){
                                     IF({RESUME_ENABLE}){
-                                    <li><a href="{LINK_RESUMES}"><i
-                                                    class="icon-feather-paperclip"></i> {LANG_MY_RESUMES}</a></li>
+                                   <!--  <li><a href="{LINK_RESUMES}"><i
+                                                    class="icon-feather-paperclip"></i> {LANG_MY_RESUMES}</a></li> -->
                                     {:IF}
-                                    <li><a href="{LINK_APPLIED_JOBS}"><i class="icon-feather-briefcase"></i> {LANG_APPLIED_JOBS}</a>
+                                    <!-- <li><a href="{LINK_APPLIED_JOBS}"><i class="icon-feather-briefcase"></i> {LANG_APPLIED_JOBS}</a>
                                     </li>
                                     <li><a href="{LINK_FAVJOBS}"><i class="icon-feather-heart"></i> {LANG_FAV_JOBS}</a>
                                     </li>
                                     <li><a href="{LINK_JOBALERT}"><i class="icon-feather-bell"></i> {LANG_JOB_ALERT}</a>
-                                    </li>
+                                    </li> -->
                                     ELSEIF('{USERTYPE}' == "employer"){
                                     IF({COMPANY_ENABLE}){
                                     <li><a href="{LINK_MYCOMPANIES}"><i

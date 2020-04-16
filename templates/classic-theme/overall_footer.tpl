@@ -18,12 +18,12 @@
                             IF({LOGGED_IN}){
                                 IF('{USERTYPE}' == "user"){
                                 <li><a href="{LINK_RESUMES}">{LANG_MY_RESUMES}</a></li>
-                                <!-- <li><a href="{LINK_FAVJOBS}">{LANG_FAV_JOBS}</a></li>
-                                <li><a href="{LINK_JOBALERT}">{LANG_JOB_ALERT}</a></li> -->
+                                <li><a href="{LINK_FAVJOBS}">{LANG_FAV_JOBS}</a></li>
+                                <li><a href="{LINK_JOBALERT}">{LANG_JOB_ALERT}</a></li>
                                 {ELSE}
-                                <!-- <li><a href="{LINK_MYCOMPANIES}">{LANG_MY_COMPANIES}</a></li>
+                                <li><a href="{LINK_MYCOMPANIES}">{LANG_MY_COMPANIES}</a></li>
                                 <li><a href="{LINK_MYJOBS}">{LANG_MY_JOBS}</a></li>
-                                <li><a href="{LINK_PENDINGJOBS}">{LANG_PENDING_JOBS}</a></li> -->
+                                <li><a href="{LINK_PENDINGJOBS}">{LANG_PENDING_JOBS}</a></li>
                                 {:IF}
                             {ELSE}
                             <li><a href="{LINK_LOGIN}">{LANG_LOGIN}</a></li>

@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @author Bylancer
- * @url https://codecanyon.net/item/quickjob-job-board-php-script/25217096
- * @Copyright (c) 2015-18 Devendra Katariya (bylancer.com)
- */
-// Path to root directory of app.
 define("ROOTPATH", dirname(__FILE__));
 
 // Path to app folder.
@@ -15,7 +9,8 @@ define("APPPATH", ROOTPATH."/php/");
 // Check if SSL enabled
 // $protocol = isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] && $_SERVER["HTTPS"] != "off"
 //     ? "https://" : "http://";
-$protocol = "https://";
+
+$protocol = 'https://';
 
 // Define APPURL
 $site_url = $protocol
@@ -36,14 +31,10 @@ $router = new AltoRouter();
 $bp = trim(str_replace("\\", "/", dirname($_SERVER["SCRIPT_NAME"])), "/");
 $router->setBasePath($bp ? "/".$bp : "");
 
-
-
 /* Setup the URL routing. This is production ready. */
 // Main routes that non-customers see
 $router->map('GET|POST','/', 'home.php');
-
 $router->map('GET|POST','/home/[a:lang]?/?', 'home.php');
-
 $router->map('GET|POST','/home/[a:lang]?/[a:country]?/?', 'home.php');
 $router->map('GET|POST','/signup/?', 'signup.php');
 $router->map('GET|POST','/index1/?', 'index1.php');
@@ -123,8 +114,6 @@ if($match) {
         exit;
     }
 
-
-
     require_once ROOTPATH . '/includes/sql_builder/idiorm.php';
     require_once ROOTPATH . '/includes/db.php';
     require_once ROOTPATH . '/includes/classes/class.template_engine.php';
@@ -144,19 +133,10 @@ if($match) {
     require_once ROOTPATH . '/includes/lang/lang_'.$config['lang'].'.php';
     require_once ROOTPATH . '/includes/seo-url.php';
 
-
     sec_session_start();
     $mysqli = db_connect();
 
-// echo "match: " .$match['target'];
-// echo "<br>ROOTPATH: " .ROOTPATH;
-// echo "<br>APPPATH: " .APPPATH .$match['target'];
-    // echo $_SERVER['DOCUMENT_ROOT'];
-// die();
-
-    require APPPATH .$match['target'];
-    // require ($_SERVER['DOCUMENT_ROOT'] .$match['target']);
-
+    require APPPATH.$match['target'];
 }
 else {
 	

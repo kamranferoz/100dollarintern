@@ -46,10 +46,10 @@
                             <input type="radio" name="user-type" id="freelancer-radio" class="account-type-radio" value="1" checked/>
                             <label for="freelancer-radio" class="ripple-effect-dark"><i class="la la-user"></i> {LANG_JOB_SEEKER}</label>
                         </div>
-                        <!-- <div>
+                        <div>
                             <input type="radio" name="user-type" id="employer-radio" class="account-type-radio" value="2" />
                             <label for="employer-radio" class="ripple-effect-dark"><i class="la la-suitcase"></i> {LANG_EMPLOYER}</label>
-                        </div> -->
+                        </div>
                     </div>
                     <span id="type-status">IF("{TYPE_ERROR}"!=""){ {TYPE_ERROR} {:IF}</span>                
                     <div class="form-group">

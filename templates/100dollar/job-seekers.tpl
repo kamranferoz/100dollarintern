@@ -136,6 +136,7 @@
                             <button type="submit" class="button"><i class="icon-feather-arrow-right"></i></button>
                         </div>
                     </div>
+                   <!--
                     <div class="sidebar-widget">
                         <h3>{LANG_EXPECTED_SALARY}</h3>
                         <div class="range-widget">
@@ -147,6 +148,7 @@
                         </div>
                         <small>{LANG_SALARY_PER_MONTH}</small>
                     </div>
+                    -->
                     <div class="sidebar-widget">
                         <h3>{LANG_GENDER}</h3>
                         <div class="radio margin-right-20">

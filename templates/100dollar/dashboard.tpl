@@ -107,9 +107,10 @@
             </div>
             <div class="col-lg-9 col-md-12">
                 <div class="dashboard-box margin-top-0">
-                    <!-- <div class="content with-padding">
-                        <div class="row dashboard-profile"> -->
-                            <!-- <div class="col-xl-6 col-md-6 col-sm-12">
+                     <!--
+                     <div class="content with-padding">
+                        <div class="row dashboard-profile"> 
+                             <div class="col-xl-6 col-md-6 col-sm-12">
                                 <div class="dashboard-avatar-box">
                                     <img src="{SITE_URL}storage/profile/{AVATAR}" alt="{LANG_NAME}">
                                     <div>
@@ -117,11 +118,12 @@
                                         <small>{LANG_YOU_LOGIN}: {LASTACTIVE}</small>
                                     </div> 
                                 </div>
-                            </div> -->
-                            <!--
+                            </div> 
+                            
                             <div class="col-xl-6 col-md-6 col-sm-12 text-right">
                                 IF('{USERTYPE}' == "user"){
                                 IF({RESUME_ENABLE}){
+                                
                                 <span class="dashboard-badge"><strong>{RESUMES}</strong><i
                                             class="icon-feather-paperclip"></i> {LANG_MY_RESUMES}</span>
                                             {:IF}
@@ -130,7 +132,7 @@
                                 ELSEIF('{USERTYPE}' == "employer"){
                                 <span class="dashboard-badge"><strong>{MYADS}</strong><i
                                             class="icon-feather-briefcase"></i> {LANG_JOBS}</span>
-                <span class="dashboard-badge"><strong> -->
+                <span class="dashboard-badge"><strong> 
                         IF("{SUB_TITLE}"!=""){
                         {SUB_TITLE}
                         {ELSE}
@@ -141,6 +143,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
                 </div> 
                 <div class="dashboard-box">
                     <!-- Headline -->

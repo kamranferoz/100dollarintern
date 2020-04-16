@@ -118,9 +118,9 @@
                                 </a>
                             </li>
                             {:IF}
-                            <!-- <li class="d-none d-lg-block">
+                            <li class="d-none d-lg-block">
                                 <a href="{LINK_LISTING}"><i class="icon-feather-list"></i> {LANG_BROWSE_JOBS}</a>
-                            </li> -->
+                            </li>
                             IF({JOB_SEEKER_ENABLE}){
                             <li class="d-none d-lg-block">
                                 <a href="{LINK_JOB_SEEKERS}">{LANG_JOB_SEEKERS}</a>
@@ -137,7 +137,7 @@
                     <!-- Mobile Navigation -->
                     <nav class="mmenu-init">
                         <ul class="mm-listview">
-                            <!-- <li><a href="{LINK_LISTING}">{LANG_BROWSE_JOBS}</a></li> -->
+                            <li><a href="{LINK_LISTING}">{LANG_BROWSE_JOBS}</a></li>
                             IF({JOB_SEEKER_ENABLE}){
                             <li><a href="{LINK_JOB_SEEKERS}">{LANG_JOB_SEEKERS}</a></li>
                             {:IF}
@@ -170,7 +170,7 @@
                             {ELSE}
                             <li><a href="{LINK_LOGIN}">{LANG_LOGIN}</a></li>
                             <li><a href="{LINK_SIGNUP}">{LANG_REGISTER}</a></li>
-                            <!-- <li><a href="{LINK_POST-JOB}" class="button ripple-effect">{LANG_POST_JOB}</a></li> -->
+                            <li><a href="{LINK_POST-JOB}" class="button ripple-effect">{LANG_POST_JOB}</a></li>
                             {:IF}
                         </ul>
                     </nav>
@@ -233,8 +233,8 @@
                                                 class="icon-feather-log-in"></i> {LANG_LOGIN}</a>
                                 </li>
                                 <li><a href="{LINK_SIGNUP}">{LANG_REGISTER}</a></li>
-                                <!-- <li><a href="{LINK_POST-JOB}" class="button ripple-effect post-job">{LANG_POST_JOB}</a>
-                                </li> -->
+                                <li><a href="{LINK_POST-JOB}" class="button ripple-effect post-job">{LANG_POST_JOB}</a>
+                                </li>
                                 {:IF}
                                 IF('{USERTYPE}' == "employer"){
                                 <li><a href="{LINK_POST-JOB}" class="button ripple-effect post-job">{LANG_POST_JOB}</a>

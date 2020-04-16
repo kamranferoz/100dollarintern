@@ -130,14 +130,6 @@ if (checkloggedin()) {
             $user_update->set('sex', $_POST["gender"]);
             $user_update->set('tagline', isset($_POST["tagline"]) ? validate_input(strlimiter($_POST["tagline"], 200)) : null);
             $user_update->set('description', addslashes(stripUnwantedTagsAndAttrs($_POST["aboutme"])));
-            
-            //KF-20200415. Added three new fields for Skillset.
-                $user_update->set('skill1', $skill1);
-                $user_update->set('skill2', $skill2);
-                $user_update->set('skill3', $skill3);
-            //KF-20200415. Added three new fields for Skillset.
-
-
             $user_update->set('website', validate_input($_POST["website"]));
             $user_update->set('facebook', validate_input($_POST["facebook"]));
             $user_update->set('twitter', validate_input($_POST["twitter"]));
@@ -256,13 +248,6 @@ if (checkloggedin()) {
     $page->SetParameter('GENDER', $ses_userdata['sex']);
     $page->SetParameter('TAGLINE', $ses_userdata['tagline']);
     $page->SetParameter('ABOUTME', $ses_userdata['description']);
-    //KF-20200415. Added three new fields for Skillset.
-        $page->SetParameter('skill1', $ses_userdata['skill1']);
-        $page->SetParameter('skill2', $ses_userdata['skill2']);
-        $page->SetParameter('skill3', $ses_userdata['skill3']);
-
-    //KF-20200415. Added three new fields for Skillset.
-
     $page->SetParameter('CAT', $ses_userdata['category']);
     $page->SetParameter('SUBCAT', $ses_userdata['subcategory']);
     $page->SetParameter('SALARY_MIN', $ses_userdata['salary_min']);
